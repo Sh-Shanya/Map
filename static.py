@@ -1,8 +1,5 @@
 import sys
-from io import BytesIO
 import requests
-from PIL import Image
-import geocoder
 
 
 def get_image(ll, spn, l):
@@ -18,4 +15,3 @@ def get_image(ll, spn, l):
 
     with open("test.png", "wb") as f:
         f.write(response.content)
-
